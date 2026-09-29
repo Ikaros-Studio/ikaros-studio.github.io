@@ -1,0 +1,87 @@
+html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikaros Studio | Joyería Artesanal & Grabado Láser</title>
+    <style>
+        /* RESETEO DE ESTILOS Y FUENTE ELEGANTE */
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Helvetica Neue', Arial, sans-serif; }
+        body { background-color: #fafafa; color: #1a1a1a; padding-bottom: 60px; -webkit-font-smoothing: antialiased; }
+        
+        /* CABECERA MINIMALISTA */
+        header { background: #ffffff; text-align: center; padding: 50px 20px; border-bottom: 1px solid #eaeaea; }
+        header h1 { font-size: 2.2rem; letter-spacing: 6px; text-transform: uppercase; font-weight: 300; color: #000000; }
+        header p { color: #888888; font-size: 0.85rem; margin-top: 10px; letter-spacing: 1.5px; text-transform: uppercase; }
+        
+        /* CONTENEDOR Y REJILLA DE PRODUCTOS */
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 35px; }
+        
+        /* TARJETAS DE PRODUCTO */
+        .card { background: #ffffff; border-radius: 6px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.02); border: 1px solid #eaeaea; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card:hover { transform: translateY(-4px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .card-img { width: 100%; height: 320px; background: #f4f4f4; display: flex; align-items: center; justify-content: center; color: #aaaaaa; font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase; border-bottom: 1px solid #f0f0f0; }
+        .card-info { padding: 25px; text-align: center; }
+        .card-title { font-size: 1.15rem; margin-bottom: 8px; font-weight: 400; letter-spacing: 0.5px; color: #222222; }
+        .card-price { color: #9c7246; font-size: 1.3rem; font-weight: 600; margin-bottom: 22px; }
+        
+        /* BOTONES DE PAGO ADAPTADOS A MÓVIL */
+        .btn-paypal { display: block; background: #0070ba; color: #ffffff; width: 100%; padding: 14px; text-decoration: none; border-radius: 25px; font-weight: bold; font-size: 0.9rem; margin-bottom: 12px; text-align: center; transition: background 0.2s; }
+        .btn-paypal:hover { background: #005ea6; }
+        .btn-bizum { display: block; background: #00c4b3; color: #ffffff; width: 100%; padding: 14px; text-decoration: none; border-radius: 25px; font-weight: bold; font-size: 0.9rem; text-align: center; transition: background 0.2s; }
+        .btn-bizum:hover { background: #00b0a1; }
+        
+        /* PIE DE PÁGINA */
+        footer { text-align: center; padding: 40px 20px; color: #b5b5b5; font-size: 0.75rem; border-top: 1px solid #eaeaea; background: #ffffff; margin-top: 80px; letter-spacing: 0.5px; }
+    </style>
+</head>
+<body>
+
+    <!-- CABECERA -->
+    <header>
+        <h1>IKAROS STUDIO</h1>
+        <p>Piezas Atemporales. Grabado Láser de Alta Precisión en España.</p>
+    </header>
+
+    <!-- CUERPO DE LA TIENDA -->
+    <div class="container">
+        <div class="grid">
+            
+            <!-- PRODUCTO 1: COLGANTE ACERO -->
+            <div class="card">
+                <div class="card-img">[ Foto: Colgante Acero Personalizado ]</div>
+                <div class="card-info">
+                    <div class="card-title">Colgante de Acero Inoxidable</div>
+                    <div class="card-price">25,00€</div>
+                    <!-- REEMPLAZA EL '#' CON TU ENLACE DE PAYPAL CUANDO LO TENGAS -->
+                    <a href="#" target="_blank" class="btn-paypal">Pagar con Tarjeta / PayPal</a>
+                    <!-- REEMPLAZA EL '34600000000' CON TU TELÉFONO DE ESPAÑA -->
+                    <a href="https://wa.me¡Hola!%20Quiero%20personalizar%20mi%20Colgante%20de%20Acero%20en%20Ikaros%20Studio" target="_blank" class="btn-bizum">Pedir por Bizum</a>
+                </div>
+            </div>
+
+            <!-- PRODUCTO 2: ANILLOS (ROTADOR) -->
+            <div class="card">
+                <div class="card-img">[ Foto: Anillo Grabado Cilíndrico ]</div>
+                <div class="card-info">
+                    <div class="card-title">Anillo Personalizado (Cilíndrico)</div>
+                    <div class="card-price">30,00€</div>
+                    <!-- REEMPLAZA EL '#' CON TU ENLACE DE PAYPAL CUANDO LO TENGAS -->
+                    <a href="#" target="_blank" class="btn-paypal">Pagar con Tarjeta / PayPal</a>
+                    <!-- REEMPLAZA EL '34600000000' CON TU TELÉFONO DE ESPAÑA -->
+                    <a href="https://wa.me¡Hola!%20Quiero%20personalizar%20un%20Anillo%20en%20Ikaros%20Studio" target="_blank" class="btn-bizum">Pedir por Bizum</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>&copy; 2026 IKAROS STUDIO. Todos los derechos reservados. Envíos certificados a toda la península 🇪🇸</p>
+    </footer>
+
+</body>
+</html>
